@@ -1,10 +1,10 @@
 import React from "react";
 
 class TwitterMessage extends React.Component {
-  constructor() {
-    super();
-
-    this.state = {};
+  constructor(props) {
+    super(props);
+    this.handleChange = this.handleChange.bind(this)
+    this.state = { value: '' };
   }
 
   render() {
